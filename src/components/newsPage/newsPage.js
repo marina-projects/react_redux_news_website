@@ -1,9 +1,14 @@
 import React from 'react';
 import { NavLink, useParams } from 'react-router-dom';
+import CommentForm from '../commentForm/commentForm';
+import { useSelector } from 'react-redux';
 
-const NewsPage = ({ newsList }) => {
+const NewsPage = () => {
+  const allNews = useSelector((state) => state.allNews)
+
   const { id } = useParams();
-  const article = newsList[id];
+  const article = allNews.find(item => item.newsID === parseInt(id));
+
 
   if (!article) {
     return <div>Article not found</div>;
@@ -15,6 +20,7 @@ const NewsPage = ({ newsList }) => {
         <h1>{article.newsTitle}</h1>
         <img src={article.newsImage} alt="" />
         <p>{article.newsShortText}</p>
+        <CommentForm />
     </div>
   );
 };
