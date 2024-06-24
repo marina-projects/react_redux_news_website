@@ -4,10 +4,10 @@ import CommentForm from '../commentForm/commentForm';
 import { useSelector } from 'react-redux';
 
 const NewsPage = () => {
-  const allNews = useSelector((state) => state.allNews)
+  const { news } = useSelector((state) => state.allNews);
 
   const { id } = useParams();
-  const article = allNews.find(item => item.newsID === parseInt(id));
+  const article = news.find(item => item.newsID === parseInt(id));
 
 
   if (!article) {
