@@ -1,6 +1,5 @@
 import React from "react";
 import './footer.css';
-import logo from '../../images/logo-white.png';
 import photo from "../../images/profile-pic (2) 2.png";
 import telegram from '../../images/telegram.svg';
 import whatsapp from '../../images/whatsapp.svg';
