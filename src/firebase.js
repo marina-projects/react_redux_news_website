@@ -2,6 +2,9 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from 'firebase/storage';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -21,5 +24,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const storage = getStorage(app);
+const Timestamp = firebase.firestore.Timestamp;
 
-export { db, storage };
+
+export { db, storage, Timestamp };

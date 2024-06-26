@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { getDocs, query, collection, where, updateDoc, arrayUnion } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db, Timestamp } from "../../firebase";
 
 export const fetchComments = createAsyncThunk(
   'comments/fetchComments',
@@ -39,6 +39,7 @@ export const addComment = createAsyncThunk(
           const newComment = {
             commentID: Date.now().toString(), // Используем текущую метку времени как уникальный идентификатор комментария
             commentText,
+            createdAt: Timestamp.now()
           };
   
           // Обновление документа, добавление нового комментария в массив comments

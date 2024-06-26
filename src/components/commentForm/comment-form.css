@@ -1,0 +1,28 @@
+.comment-form {
+    align-items: flex-start;
+    width: clamp(40px, 90vw, 1100px);
+    gap: 20px;
+}
+
+.comment-form form {
+    gap: 20px;
+}
+
+.comment-form button {
+    background-color: var(--dark-gray);
+    color: white;
+    width: 200px;
+}
+
+.comment-form textarea {
+    height: 180px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.comment-form-content {
+    width: 50%;
+    align-items: flex-start;
+    gap: 20px;
+
+}

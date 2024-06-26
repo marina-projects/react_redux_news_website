@@ -1,0 +1,13 @@
+.comments-area {
+    gap: 30px;
+    width: clamp(40px, 90vw, 1100px);
+    align-items: flex-start;
+}
+
+.comment-content {
+    width: 50%;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
