@@ -47,46 +47,29 @@
 
 @media screen and (max-width: 767px) {
 
-    /* top menu */
-
-    .top-menu {
-        padding: 0;
+    .main-menu {
+        height: 50px;
     }
 
-    .features-area {
-        display: none;
-    }
-
-    .currency-area {
-        width: 100%;
-        padding: 0;
-    }
-
-    .currency-switcher {
-        gap: 10px;
-        justify-content: center;
-        padding: 0;
-    }
-
-    /* main menu */
-
-    .menu-area {
-        width: 100%;
-        padding: 5% 3%;
-        background-color: #f3f3f3;
-    }
-
-    .cart-area {
-        width: 35%;
-    }
-
-    .cart-area, .logo-area {
+    .logo-area {
         order: -1;
-        padding: 2% 3%;
+        width: 45%;
     }
 
-    .menu-area nav {
-        justify-content: space-between;
+    .logo-area img {
+        height: 80px;
+        width: auto;
+    }
+
+    .title-area {
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-area {
+        width: 45%;
+        align-items: center;
+        order: -1;
     }
 
 }

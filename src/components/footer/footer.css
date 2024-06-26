@@ -2,6 +2,13 @@
 
 .footer {
     background-color: var(--dark-gray);
+    width: 100%;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.footer-content .footer {
+    width: clamp(40px, 90vw, 1700px);
     justify-content: space-between;
     align-items: flex-start;
     padding: 30px 0;
@@ -14,12 +21,14 @@
 /* FIRST COLUMN */
 
 .first-column {
-    width: 55%;
+    width: 50%;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
     padding-left: 5%;
 }
+
+
 
 /* logo */
 
@@ -31,14 +40,20 @@
 
 .project-description {
     align-items: flex-start;
+    justify-content: flex-start;
     gap: 10px;
 }
+
 
 .project-description p {
     text-align: left;
     font-size: 16px;
     line-height: 1.3;
     width: 60%;
+}
+
+.project-description h3 {
+    color: white;
 }
 
 /* Read more button */
@@ -56,7 +71,7 @@
 /* SECOND COLUMN */
 
 .second-column {
-    width: 35%;
+    width: 40%;
     align-items: flex-start;
     gap: 20px;
     padding-bottom: 30px;
@@ -139,6 +154,7 @@
     .project-description {
         width: 90%;
         margin-left: 0;
+        align-items: center;
     }
 
     .icons-area {
@@ -160,5 +176,10 @@
     .project-description p {
         width: 100%;
         text-align: center;
+    }
+
+    .project-description h3 {
+        text-align: center;
+        margin-bottom: 20px;
     }
 }

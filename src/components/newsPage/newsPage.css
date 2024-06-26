@@ -65,3 +65,34 @@
     gap: 30px;
 }
 
+.comment-form button {
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+    .news-page {
+        margin-top: 50px;
+    }
+
+    .comments-area {
+        align-items: center;
+    }
+
+    .comment-content, .comment-form-content {
+        width: 100%;
+    }
+
+    .comment-form-content {
+        align-items: center;
+    }
+
+    .comment-content p {
+        text-align: left;
+    }
+
+    .comment-form button {
+        align-self: center;
+    }
+
+    
+}
