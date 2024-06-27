@@ -80,9 +80,8 @@ const NewsList = () => {
                     <h2>{newsItem.newsTitle}</h2>
                     <p>Date: {format(newsItem.newsDate.toDate(), 'dd/MM/yyyy')}</p>
                   </div>
-                  <div className="item-button-area">
-                    <img src={arrow} alt='' />
-                  </div>
+                  
+
                 </NavLink>
               </div>
             ))}
