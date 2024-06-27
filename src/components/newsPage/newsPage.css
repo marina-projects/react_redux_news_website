@@ -76,6 +76,10 @@
         margin-top: 50px;
     }
 
+    .news-page h1 {
+        font-size: 36px;
+    }
+
     .comments-area {
         align-items: center;
     }
